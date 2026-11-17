@@ -42,9 +42,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 3. Dynamic projects rendering and filtering
   const projects = [
-    { title: "Personal Portfolio", category: "html", description: "A simple semantic landing page built with HTML5.", link: "#" },
-    { title: "Flexbox Layout Lab", category: "css", description: "Responsive card grids and navigation bars using CSS Flexbox.", link: "#" },
-    { title: "Interactive Calculator", category: "js", description: "A functional browser calculator built using vanilla JavaScript DOM methods.", link: "#" }
+    { title: "Personal Portfolio", category: "html", description: "A responsive personal portfolio built with semantic HTML5 markup.", link: "#" },
+    { title: "Flexbox Layout Lab", category: "css", description: "A multi-column card layout built using CSS Flexbox properties.", link: "#" },
+    { title: "Interactive Calculator", category: "js", description: "A fully functional browser calculator built using vanilla JavaScript DOM manipulation.", link: "#" }
+    { title: "Git Version Control Workflow", category: "git", description: "A documented branching and merging workflow for collaborative development.", link: "#" } 
   ];
 
   const projectList = document.getElementById("project-list");
