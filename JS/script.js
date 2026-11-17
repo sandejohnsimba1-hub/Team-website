@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const projects = [
     { title: "Personal Portfolio", category: "html", description: "A responsive personal portfolio built with semantic HTML5 markup.", link: "#" },
     { title: "Flexbox Layout Lab", category: "css", description: "A multi-column card layout built using CSS Flexbox properties.", link: "#" },
-    { title: "Interactive Calculator", category: "js", description: "A fully functional browser calculator built using vanilla JavaScript DOM manipulation.", link: "#" }
-    { title: "Git Version Control Workflow", category: "git", description: "A documented branching and merging workflow for collaborative development.", link: "#" } 
+    { title: "Interactive Calculator", category: "js", description: "A fully functional browser calculator built using vanilla JavaScript DOM manipulation.", link: "#" },
+    { title: "Git Version Control Workflow", category: "git", description: "A documented branching and merging workflow for collaborative development.", link: "#" }
   ];
 
   const projectList = document.getElementById("project-list");
