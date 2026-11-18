@@ -8,7 +8,10 @@
   --border: #e2e8f0;
 }
 
-body.dark-mode {
+body.dark-mode,
+body.dark,
+html[data-theme="dark"] body,
+[data-theme="dark"] {
   --bg: #0f172a;
   --surface: #1e293b;
   --text: #f8fafc;
@@ -38,7 +41,6 @@ body {
   padding: 0 1.25rem;
 }
 
-/* Header & Navigation */
 .site-header {
   background-color: var(--surface);
   border-bottom: 1px solid var(--border);
@@ -87,7 +89,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* Hero Section */
 .hero {
   padding: 4.5rem 0;
   background-color: var(--surface);
@@ -113,7 +114,6 @@ body {
   justify-content: center;
 }
 
-/* Buttons */
 .btn {
   display: inline-block;
   padding: 0.65rem 1.25rem;
@@ -139,7 +139,6 @@ body {
   border: 1px solid var(--border);
 }
 
-/* Sections & Cards */
 .section {
   padding: 3.5rem 0;
 }
@@ -187,7 +186,6 @@ body {
   gap: 0.5rem;
 }
 
-/* Filter Bar & Contact Form */
 .filter-bar {
   display: flex;
   gap: 0.75rem;
@@ -234,7 +232,6 @@ body {
   font-weight: 500;
 }
 
-/* Footer */
 .site-footer {
   border-top: 1px solid var(--border);
   padding: 2rem 0;
