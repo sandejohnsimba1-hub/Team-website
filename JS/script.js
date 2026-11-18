@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Dark Mode Toggle with LocalStorage Persistence
-  const themeBtn = document.getElementById("themeToggle") || document.querySelector(".btn-theme");
+  const themeBtn = document.getElementById("themeToggle");
   const savedTheme = localStorage.getItem("theme");
 
   if (savedTheme === "dark") {
@@ -17,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 2. Project Filter Buttons (Projects Page)
+  // Project Filtering
   const filterBtns = document.querySelectorAll(".filter-btn");
   const projectCards = document.querySelectorAll(".project-card");
 
@@ -37,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 3. Contact Form Validation (Contact Page)
+  // Contact Form
   const contactForm = document.getElementById("contactForm");
   const formStatus = document.getElementById("formStatus");
 

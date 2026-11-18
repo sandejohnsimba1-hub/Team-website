@@ -8,10 +8,7 @@
   --border: #e2e8f0;
 }
 
-body.dark-mode,
-body.dark,
-html[data-theme="dark"] body,
-[data-theme="dark"] {
+body.dark-mode {
   --bg: #0f172a;
   --surface: #1e293b;
   --text: #f8fafc;
@@ -143,8 +140,7 @@ body {
   padding: 3.5rem 0;
 }
 
-.section h2,
-.section h1 {
+.section h1, .section h2 {
   margin-bottom: 1.5rem;
 }
 
@@ -184,6 +180,7 @@ body {
   padding-left: 1.25rem;
   display: grid;
   gap: 0.5rem;
+  text-align: left;
 }
 
 .filter-bar {
@@ -216,6 +213,7 @@ body {
 .form-group {
   display: grid;
   gap: 0.4rem;
+  text-align: left;
 }
 
 .form-group input,
