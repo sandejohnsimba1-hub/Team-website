@@ -3,61 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Code Crafters | Home</title>
+  <title>Home - Code Crafters</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="brand">Code Crafters</a>
-      <nav aria-label="Primary Navigation">
+      <nav>
         <ul class="nav-list">
           <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <button id="theme-toggle" class="btn-theme" aria-label="Toggle dark mode">🌙</button>
+      <button class="btn-theme" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
     </div>
   </header>
 
-  <main id="main">
-    <section class="hero">
-      <div class="container">
-        <h1>Building Clean, Responsive Web Experiences</h1>
-        <p class="lead">Welcome to Code Crafters—a showcase of structured HTML, modern CSS layouts, and interactive JavaScript.</p>
-        <div class="hero-actions">
-          <a href="projects.html" class="btn btn-primary">View Projects</a>
-          <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
-        </div>
+  <main class="hero">
+    <div class="container">
+      <h1>Building Clean, Responsive Web Experiences</h1>
+      <p class="lead">Welcome to Code Crafters—a showcase of structured HTML, modern CSS layouts, and interactive JavaScript.</p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn btn-primary">View Projects</a>
+        <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
       </div>
-    </section>
+    </div>
+  </main>
 
-    <section class="container section" aria-labelledby="team-heading">
-      <h2 id="team-heading">About the Developer</h2>
-      <div class="team-grid">
-        <article class="card">
-          <img src="images/john.jpg" alt="John Madimwa" class="avatar">
-          <h3>John Madimwa</h3>
-          <p class="role">Structure and Design</p>
-          <p>Enjoys turning rough sketches into clean, accessible layouts.</p>
-        </article>
+  <section class="container section">
+    <h2>About the Developer</h2>
+    <div class="team-grid">
+      <div class="card">
+        <img src="images/avatar.jpg" alt="John Madimwa" class="avatar">
+        <h3>John Madimwa</h3>
+        <p class="role">Structure and Design</p>
+        <p>Enjoys turning rough sketches into clean, accessible layouts.</p>
       </div>
-    </section>
+    </div>
 
-    <section class="container section" aria-labelledby="learning-heading">
-      <h2 id="learning-heading">What I am Learning</h2>
+    <h2 style="margin-top: 2.5rem;">What I Am Learning</h2>
+    <div class="card" style="text-align: left;">
       <ul class="skill-list">
         <li><strong>HTML</strong> gives a page its structure and meaning.</li>
         <li><strong>CSS</strong> controls how that structure looks.</li>
         <li><strong>JavaScript</strong> brings pages to life with interactivity.</li>
       </ul>
-    </section>
-  </main>
+    </div>
+  </section>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2026 John Madimwa &bull; Code Crafters</p>
+      <p>&copy; 2026 John Madimwa • Code Crafters</p>
     </div>
   </footer>
 
