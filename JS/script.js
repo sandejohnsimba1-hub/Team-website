@@ -4,7 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (savedTheme === "dark") {
     document.body.classList.add("dark-mode");
-    if (themeBtn) themeBtn.textContent = "☀️";
+    if (themeBtn) {
+      themeBtn.textContent = "☀️";
+    }
   }
 
   if (themeBtn) {
@@ -28,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const category = btn.getAttribute("data-filter");
       projectCards.forEach((card) => {
         if (category === "all" || card.getAttribute("data-category") === category) {
-          card.style.display = "block";
+          card.style.display = "";
         } else {
           card.style.display = "none";
         }
