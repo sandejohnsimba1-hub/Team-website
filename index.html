@@ -3,62 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Code Crafters</title>
+  <meta name="description" content="Code Crafters: web development portfolio by John Madimwa for CSC 216.">
+  <title>Home | Code Crafters</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="brand">Code Crafters</a>
-      <nav>
-        <ul class="nav-list">
+      <a class="logo" href="index.html">Code Crafters</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
           <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <button type="button" class="btn-theme" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+
+      <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
     </div>
   </header>
 
-  <main class="hero">
-    <div class="container">
-      <h1>Building Clean, Responsive Web Experiences</h1>
-      <p class="lead">Welcome to Code Crafters—a showcase of structured HTML, modern CSS layouts, and interactive JavaScript.</p>
-      <div class="hero-actions">
-        <a href="projects.html" class="btn btn-primary">View Projects</a>
-        <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">CSC 216 · Web Technologies</p>
+        <h1>Building Clean, Responsive Web Experiences</h1>
+        <p class="lead">Welcome to Code Crafters—a showcase of structured HTML, modern CSS layouts, and interactive JavaScript built from scratch.</p>
+        <div class="hero-actions">
+          <a class="button" href="projects.html">View Projects</a>
+          <a class="button-outline" href="contact.html">Get in Touch</a>
+        </div>
       </div>
-    </div>
-  </main>
+    </section>
 
-  <section class="container section">
-    <h2>About the Developer</h2>
-    <div class="team-grid">
-      <div class="card">
-        <img src="images/john.jpg" alt="John Madimwa" class="avatar">
-        <h3>John Madimwa</h3>
-        <p class="role">Structure and Design</p>
-        <p>Enjoys turning rough sketches into clean, accessible layouts.</p>
+    <section class="container section" aria-labelledby="team-heading">
+      <h2 id="team-heading">About the Developer</h2>
+      <div class="team-grid">
+        <article class="card">
+          <img class="profile-photo" src="images/john.jpg" alt="Portrait of John Madimwa" width="80" height="80">
+          <h3>John Madimwa</h3>
+          <p class="role">Frontend Structure, Styling &amp; JavaScript</p>
+          <p>Computer Science student passionate about turning clean code into fast, accessible, user-friendly web interfaces.</p>
+        </article>
       </div>
-    </div>
+    </section>
 
-    <h2 style="margin-top: 2.5rem;">What I Am Learning</h2>
-    <div class="card">
+    <section class="container section" aria-labelledby="learning-heading">
+      <h2 id="learning-heading">What I Am Learning</h2>
       <ul class="skill-list">
-        <li><strong>HTML</strong> gives a page its structure and meaning.</li>
-        <li><strong>CSS</strong> controls how that structure looks.</li>
-        <li><strong>JavaScript</strong> brings pages to life with interactivity.</li>
+        <li><strong>HTML5</strong> gives every page semantic structure, accessibility, and clear meaning.</li>
+        <li><strong>CSS3</strong> controls responsive layouts, custom variables, Flexbox, and Grid styling.</li>
+        <li><strong>JavaScript</strong> brings dynamic filtering, theme persistence, and live form validation.</li>
+        <li><strong>Git &amp; GitHub</strong> track clean version history and deploy live sites with GitHub Pages.</li>
       </ul>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2026 John Madimwa • Code Crafters</p>
+      <p>&copy; <span id="year">2026</span> John Madimwa &bull; Code Crafters. Built for CSC 216.</p>
     </div>
   </footer>
-
-  <script src="js/script.js?v=3"></script>
 </body>
 </html>

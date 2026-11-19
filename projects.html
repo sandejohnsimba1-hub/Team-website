@@ -3,59 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects - Code Crafters</title>
+  <meta name="description" content="Projects built by Code Crafters in HTML, CSS, JavaScript, and Git.">
+  <title>Projects | Code Crafters</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="brand">Code Crafters</a>
-      <nav>
-        <ul class="nav-list">
+      <a class="logo" href="index.html">Code Crafters</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="projects.html" aria-current="page">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <button type="button" class="btn-theme" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+
+      <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
     </div>
   </header>
 
-  <main class="container section">
-    <h1>Projects</h1>
-    <p class="lead">Explore recent web development builds and experiments.</p>
+  <main id="main" class="container">
+    <header class="page-header">
+      <h1>Our Projects</h1>
+      <p class="lead">Applications and exercises built while mastering web development. Filter by technology or search by title.</p>
+    </header>
 
-    <div class="filter-bar">
-      <button type="button" class="filter-btn active" data-filter="all">All</button>
-      <button type="button" class="filter-btn" data-filter="html-css">HTML & CSS</button>
-      <button type="button" class="filter-btn" data-filter="js">JavaScript</button>
+    <div class="field search-box">
+      <label for="project-search">Search projects</label>
+      <input type="search" id="project-search" placeholder="Type to filter by title...">
     </div>
 
-    <div class="projects-grid">
-      <div class="card project-card" data-category="html-css">
-        <h3>Team Website Portfolio</h3>
-        <p class="role">HTML5 / CSS3 / Flexbox</p>
-        <p>A fully responsive multi-page developer portfolio featuring custom themes and clean layout design.</p>
-      </div>
-      <div class="card project-card" data-category="js">
-        <h3>Interactive Calculator</h3>
-        <p class="role">Python / Tkinter / GUI</p>
-        <p>A desktop graphical utility built with event-driven logic and exception error handling.</p>
-      </div>
-      <div class="card project-card" data-category="html-css">
-        <h3>Landing Page Layout</h3>
-        <p class="role">CSS Grid & Responsive UI</p>
-        <p>Modern component architecture optimized for mobile viewports and scalable typography grids.</p>
-      </div>
+    <div class="filters" role="group" aria-label="Filter projects by technology">
+      <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-btn" type="button" data-filter="html" aria-pressed="false">HTML</button>
+      <button class="filter-btn" type="button" data-filter="css" aria-pressed="false">CSS</button>
+      <button class="filter-btn" type="button" data-filter="js" aria-pressed="false">JavaScript</button>
+      <button class="filter-btn" type="button" data-filter="git" aria-pressed="false">Git</button>
     </div>
+
+    <p id="project-count" class="project-count" aria-live="polite"></p>
+    <div id="project-list" class="project-grid"></div>
+
+    <noscript>
+      <p>Turn on JavaScript to see the project list.</p>
+    </noscript>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2026 John Madimwa • Code Crafters</p>
+      <p>&copy; <span id="year">2026</span> John Madimwa &bull; Code Crafters. Built for CSC 216.</p>
     </div>
   </footer>
-
-  <script src="js/script.js?v=3"></script>
 </body>
 </html>
